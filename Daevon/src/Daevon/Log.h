@@ -36,3 +36,5 @@ namespace Daevon {
 #define DV_WARN(...)          ::Daevon::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define DV_ERROR(...)         ::Daevon::Log::GetClientLogger()->error(__VA_ARGS__)
 #define DV_FATAL(...)         ::Daevon::Log::GetClientLogger()->fatal(__VA_ARGS__)
+
+// if dist build
