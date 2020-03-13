@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Daevon\Log.h" />
     <ClInclude Include="src\Daevon.h" />
     <ClInclude Include="src\Daevon\Application.h" />
     <ClInclude Include="src\Daevon\Core.h" />
     <ClInclude Include="src\Daevon\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Daevon\Log.cpp" />
     <ClCompile Include="src\Daevon\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -67,6 +69,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>DV_PLATFORM_WINDOWS;DV_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Daevon\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -81,6 +84,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>DV_PLATFORM_WINDOWS;DV_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Daevon\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

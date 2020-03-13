@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "Daevon/Application.h"
+#include "Daevon/Log.h"
 
 // --- Entry point ------------
 
